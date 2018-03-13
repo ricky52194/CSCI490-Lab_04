@@ -73,7 +73,10 @@ public class myAsyncTask extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String string) {
+        super.onPostExecute(string);
+        Log.i("JSON", string);
         textview.setText(string.substring(10, 23));
-
     }
+
+
 }

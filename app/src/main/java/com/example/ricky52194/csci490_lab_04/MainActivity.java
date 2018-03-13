@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         myAsyncTask task = new myAsyncTask(view);
         task.execute("https://jsonplaceholder.typicode.com/users");
 
-
     }
 
 }
