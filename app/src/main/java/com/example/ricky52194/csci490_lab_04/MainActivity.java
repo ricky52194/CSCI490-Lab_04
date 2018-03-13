@@ -20,10 +20,7 @@ public class MainActivity extends AppCompatActivity {
         getURL("https://jsonplaceholder.typicode.com/users");
     }
 
-
     public String getURL(String s)  {
-
-
 
         URL url = null;
         try {
@@ -32,15 +29,12 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
-
         URLConnection connection = null;
         try {
             connection = url.openConnection();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
         InputStreamReader isr = null;
         try {
@@ -49,20 +43,17 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
-
         BufferedReader in = new BufferedReader(isr);
         String line = null;
         try {
             line = in.readLine();
             while (in.readLine() != null) {
-                Log.i("Okay", line);
+                Log.i("Contents", line);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
         return s;
     }
