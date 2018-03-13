@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getURL("https://jsonplaceholder.typicode.com/users");
+        makeURLConnection("https://jsonplaceholder.typicode.com/users");
     }
 
-    public String getURL(String s)  {
+    public String makeURLConnection(String s)  {
 
         URL url = null;
         try {
